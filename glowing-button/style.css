@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #050801;
+}
+
+/* Reset CSS */
+button,
+a,
+textarea{
+    font-family: 'Raleway', sans-serif !important;
+    text-decoration: none;
+}
+
+/* Button */
+.btn-group{
+    display: flex; 
+    align-items: center;
+    height: 100vh;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    font-size: 15px; 
+    font-weight: 700;
+    letter-spacing: 0.25em; 
+    border-style: none;
+    background-color: #050801; 
+}
+
+.btn.green{
+    margin-bottom: 30px;
+    color: #00ff00;
+}
+
+.btn.green:hover{
+    transition: background-color 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+    color: #050801;
+    background-color: #00ff00;
+}
+
+.btn.pink{
+    margin-bottom: 30px;
+    color: #ff66ff; 
+}
+
+.btn.pink:hover{
+    transition: background-color 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+    color: #050801;
+    background-color: #ff66ff;
+}
+
+.btn.blue{
+    margin-right: 0;
+    color: #00ffff;
+} 
+
+.btn.blue:hover{
+    transition: background-color 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+    color: #050801;
+    background-color: #00ffff;
+}
+
+/* Button Animation */
+.btn span:nth-child(1){
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 2px;
+    animation-name: loading-top; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    background: linear-gradient(90deg, transparent, #00ff00);
+}
+
+@keyframes loading-top{
+    0%{
+        left: -100%; 
+    }
+
+    50%, 100%{
+        left: 100%; 
+    }
+}
+
+.btn span:nth-child(2){
+    position: absolute; 
+    top: -100%; 
+    right: 0;
+    width: 2px; 
+    height: 100%;
+    animation-name: loading-right; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 0.25s;
+    background: linear-gradient(180deg, transparent, #00ff00);
+}
+
+@keyframes loading-right{
+    0%{
+        top: -100%;
+    }
+
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+.btn span:nth-child(3){
+    position: absolute; 
+    bottom: 0; 
+    right: -100%;
+    width: 100%; 
+    height: 2px;
+    animation-name: loading-bottom; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    background: linear-gradient(-90deg, transparent, #00ff00);
+}
+
+@keyframes loading-bottom{
+    0%{
+        right: -100%; 
+    }
+
+    50%, 100%{
+        right: 100%; 
+    }
+}
+
+.btn span:nth-child(4){
+    position: absolute; 
+    bottom: -100%; 
+    left: 0;
+    width: 2px; 
+    height: 100%;
+    animation-name: loading-left; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 0.75s;
+    background: linear-gradient(0deg, transparent, #00ff00);
+}
+
+@keyframes loading-left{
+    0%{
+        bottom: -100%; 
+    }
+
+    50%, 100%{
+        bottom: 100%; 
+    }
+}
+
+.btn.pink span:nth-child(1){
+    background: linear-gradient(90deg, transparent, #ff66ff);
+}
+
+.btn.pink span:nth-child(2){
+    background: linear-gradient(180deg, transparent, #ff66ff);
+}
+
+.btn.pink span:nth-child(3){
+    background: linear-gradient(-90deg, transparent, #ff66ff);
+}
+
+.btn.pink span:nth-child(4){
+    background: linear-gradient(0deg, transparent, #ff66ff);
+}
+
+.btn.blue span:nth-child(1){
+    background: linear-gradient(90deg, transparent, #00ffff);
+}
+
+.btn.blue span:nth-child(2){
+    background: linear-gradient(180deg, transparent, #00ffff);
+}
+
+.btn.blue span:nth-child(3){
+    background: linear-gradient(-90deg, transparent, #00ffff);
+}
+
+.btn.blue span:nth-child(4){
+    background: linear-gradient(0deg, transparent, #00ffff);
+}
