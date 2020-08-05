@@ -9,7 +9,8 @@ a{
 }
 
 /* Font*/
-header{
+header, 
+.banner{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -57,6 +58,22 @@ header{
 }
 
 .header-menu a strong{
+    color: #1C2A39;
+}
+
+.banner{
+    height: 500px; 
+    margin: 20px;
+    background-color: #FFE0E2;;
+}
+
+.banner h1{
+    padding-top: 20px;
+    font-size: 24px; 
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
     color: #1C2A39;
 }
 
