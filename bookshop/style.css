@@ -61,20 +61,65 @@ header{
     color: #1C2A39;
 }
 
+/* Banner */
+
 .banner{
+    width: 320px;
     height: 500px; 
-    margin: 20px;
+    margin: 20px auto 0;
     background-color: #FFE0E2;;
 }
 
 .banner h1{
-    padding-top: 20px;
-    font-size: 24px; 
+    padding-top: 40px;
+    font-size: 18px; 
     font-weight: 600;
     line-height: 1.2;
+    letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: #1C2A39;
+}
+
+.banner .sale-percentage{
+    position: relative;
+    height: 170px;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.banner .sale-percentage .up{
+    position: absolute;
+    display: inline-block;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    font-size: 50px; 
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 5px 5px #534FD2;
+}
+
+.banner .sale-percentage .percentage-number{
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 64px;
+    font-size: 142px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: 5px 5px #534FD2;
+}
+
+.banner .sale-percentage .percentage-icon{
+    position: absolute;
+    display: inline-block;
+    bottom: 0; 
+    right: 0;
+    font-size: 40px; 
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 3px 3px #534FD2;
 }
 
 @media screen and (min-width: 720px){
