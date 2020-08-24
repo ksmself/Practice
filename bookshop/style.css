@@ -62,9 +62,8 @@ header{
 }
 
 /* Banner */
-
 .banner{
-    width: 320px;
+    width: 300px;
     height: 500px; 
     margin: 20px auto 0;
     background-color: #FFE0E2;;
@@ -89,7 +88,6 @@ header{
 }
 
 .banner .sale-percentage .up{
-    position: absolute;
     display: inline-block;
     position: absolute;
     top: 0; 
@@ -101,10 +99,10 @@ header{
 }
 
 .banner .sale-percentage .percentage-number{
-    position: absolute;
     display: inline-block;
+    position: absolute;
     top: 10px;
-    left: 64px;
+    left: 54px;
     font-size: 142px;
     font-weight: 900;
     line-height: 1.2;
@@ -112,14 +110,44 @@ header{
 }
 
 .banner .sale-percentage .percentage-icon{
-    position: absolute;
     display: inline-block;
+    position: absolute;
     bottom: 0; 
     right: 0;
     font-size: 40px; 
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 3px 3px #534FD2;
+}
+
+.change-book-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 260px;
+    left: 15px;
+    width: 130px;
+    height: 150px; 
+    font-size: 16px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #9E98DC;
+}
+
+.top-100-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 310px;
+    right: 15px; 
+    width: 130px; 
+    height: 150px; 
+    font-size: 16px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #FF8FE6;
 }
 
 @media screen and (min-width: 720px){
