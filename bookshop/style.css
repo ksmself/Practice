@@ -6,6 +6,7 @@
 /* Reset CSS */
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Font*/
@@ -166,5 +167,25 @@ header{
         height: 116px;
         align-items: center;
         font-size: 12px;
+    }
+
+    /* Banner */
+    .banner{
+        width: 90%;
+    }
+
+    .banner .col-12{
+        position: relative; 
+    }
+
+    .banner h1{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .sale-percentage{
+        position: absolute;
+        bottom: 0;
+        width: 300px;
     }
 }
