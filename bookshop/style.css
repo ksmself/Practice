@@ -35,8 +35,8 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    transform: translateY(-4px);
     height: 58px;
+    transform: translateY(-4px);
 }
 
 .user-icon,
@@ -151,7 +151,7 @@ header{
     background-color: #FF8FE6;
 }
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
     /* Header */
     .header-title{
         height: 116px;
@@ -184,8 +184,15 @@ header{
     }
 
     .sale-percentage{
-        position: absolute;
-        bottom: 0;
         width: 300px;
+        margin: 0 auto;
+    }
+
+    .change-book-page{
+        width: 50%;
+    }
+
+    .top-100-page{
+        width: 50%;
     }
 }
