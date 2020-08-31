@@ -11,7 +11,8 @@ a{
 
 /* Font*/
 header, 
-.banner{
+.banner,
+.bestsellers-category{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -66,7 +67,7 @@ header{
 .banner{
     width: 300px;
     height: 500px; 
-    margin: 20px auto 0;
+    margin: 20px auto 90px;
     background-color: #FFE0E2;;
 }
 
@@ -149,6 +150,49 @@ header{
     font-weight: 700;
     text-transform: uppercase;
     background-color: #FF8FE6;
+}
+
+/* Aside */
+.bestsellers-category{
+    background-color: #EFEEF6;
+}
+
+.bestsellers-category header{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 18px;
+}
+
+.bestsellers-category .fa-circle{
+    width: 6px; 
+    height: 6px;
+    margin-right: 13px;
+    color: #756AD3; 
+}
+
+.bestsellers-category h1{
+    font-size: 16px;
+    color: #1C2A39;
+}
+
+.bestsellers-category ul{
+    list-style-type: none;
+}
+
+.bestsellers-category li{
+    margin-bottom: 23px;
+}
+
+.bestsellers-category li a{
+    font-size: 12px; 
+    font-weight: 500;
+    line-height: 1.25;
+    color: #5C6A79;
+}
+
+.bestsellers-category li:last-child{
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px){
