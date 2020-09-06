@@ -153,15 +153,15 @@ header{
 }
 
 /* Aside */
-.bestsellers-category{
-    background-color: #EFEEF6;
-}
-
 .bestsellers-category header{
     display: flex;
     align-items: center;
     height: 40px;
     margin-bottom: 18px;
+}
+
+.bestsellers-category .col-5{
+    background-color: #EFEEF6;
 }
 
 .bestsellers-category .fa-circle{
