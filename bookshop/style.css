@@ -1,19 +1,13 @@
 *{
     box-sizing: border-box;
     margin: 0; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Reset CSS */
 a{
     text-decoration: none;
     cursor: pointer;
-}
-
-/* Font*/
-header, 
-.banner,
-.bestsellers-category{
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* Header */
@@ -193,6 +187,32 @@ header{
 
 .bestsellers-category li:last-child{
     margin-bottom: 0;
+}
+
+.bestsellers-category img{
+    display: block; 
+    width: 190px; 
+    height: 250px;
+    margin-bottom: 12px; 
+}
+
+.bestsellers-category .desc .author{
+    display: block; 
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5C6A79;
+}
+
+.bestsellers-category .desc h1{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.bestsellers-category .desc .author, 
+.bestsellers-category .desc .summary{
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 768px){
