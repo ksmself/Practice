@@ -204,16 +204,48 @@ header{
     color: #5C6A79;
 }
 
+.bestsellers-category .desc .author, 
+.bestsellers-category .desc .summary{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .bestsellers-category .desc h1{
     display: block;
     margin-bottom: 4px;
     font-size: 20px;
 }
 
-.bestsellers-category .desc .author, 
-.bestsellers-category .desc .summary{
-    font-family: 'Open Sans', sans-serif;
+.bestsellers-category .review{
+    font-size: 13px;
+    color: #5C6A79;
 }
+
+.bestsellers-category .review .fa-star{
+    color: #F2C94C;
+}
+
+.bestsellers-category .review .fa-star.blank-star{
+    color: #EEEDF5;
+}
+
+.bestsellers-category .review .fa-star.star-10{
+    display: inline-block;
+    position: relative; 
+    color: #EEEDF5;
+}
+
+.bestsellers-category .review .fa-star.star-10:after{
+    display: inline-block;
+    width: 10%;
+    position: absolute; 
+    top: 0; 
+    left: 0;  
+    font-family: 'FontAwesome';
+    content: "f005";
+    overflow: hidden;  
+    color: #F2C94C;
+}
+
 
 @media screen and (min-width: 768px){
     /* Header */
