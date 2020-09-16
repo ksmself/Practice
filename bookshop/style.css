@@ -189,56 +189,114 @@ header{
     margin-bottom: 0;
 }
 
-.bestsellers-category img{
+.book{
+    margin-bottom: 80px;
+}
+
+.book img{
     display: block; 
     width: 190px; 
     height: 250px;
     margin-bottom: 12px; 
 }
 
-.bestsellers-category .desc .author{
+.book .desc .author{
     display: block; 
     margin-bottom: 4px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     color: #5C6A79;
 }
 
-.bestsellers-category .desc .author, 
-.bestsellers-category .desc .summary{
+.book .desc .author, 
+.book .desc .summary{
     font-family: 'Open Sans', sans-serif;
 }
 
-.bestsellers-category .desc h1{
+.book .desc h1{
     display: block;
     margin-bottom: 4px;
     font-size: 20px;
 }
 
-.bestsellers-category .review{
+.book .review{
     font-size: 13px;
+    margin-bottom: 10px;
     color: #5C6A79;
 }
 
-.bestsellers-category .review .fa-star{
+.book .review .fa-star{
     color: #F2C94C;
 }
 
-.bestsellers-category .review .fa-star.blank-star{
+.book .review .fa-star.blank-star{
     color: #EEEDF5;
 }
 
-.bestsellers-category .review .fa-star.star-10{
-    display: inline-block;
+.book .review .fa-star.star-10{
     color: #EEEDF5;
 }
 
-.bestsellers-category .review .fa-star.star-10::after{
+/* .book .review .fa-star.star-10::after{
     display: inline-block; 
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    content: "\f005"; 
+    content: '\f005'; 
     color: #F2C94C;
+} */
+
+.book .review .fa-star.star-40{
+    color: #EEEDF5;
+}
+
+.book .review .fa-star.star-80{
+    color: #EEEDF5;
+}
+
+.book .review .fa-star.star-90{
+    color: #EEEDF5;
+}
+
+.book .review .fa-star:nth-child(5){
+    margin-right: 6px;
+}
+
+.book .review a{
+    color: #5C6A79;
+}
+
+.book .summary{
+    margin-bottom: 9px;
+    /* font-family: 'Open Sans', sans-serif;  */
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #5C6A79;
+}
+
+.book .price{
+    margin-bottom: 12px;
+}
+
+.book .price strong{
+    display: inline-block;
+    margin-right: 5px;
+    color: #1C2A39;
+}
+
+.book .price .net-price{
+    text-decoration: line-through;
+    color: #BDBDBD;
+}
+
+.book .purchase-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 14px 24px;
+    border: 1px solid #4C3DB2; 
+    font-weight: 700;  
+    font-size: 7px;
+    color: #4C3DB2;
 }
 
 @media screen and (min-width: 768px){
