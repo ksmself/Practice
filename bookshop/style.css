@@ -233,17 +233,24 @@ header{
     color: #EEEDF5;
 }
 
+/* .book .review .fa-star.star-10{
+    position: relative; 
+    color: #EEEDF5;
+} */
+
 .book .review .fa-star.star-10{
+    display: inline-block; 
+    position: relative; 
+    font-size: 13px;
     color: #EEEDF5;
 }
 
-/* .book .review .fa-star.star-10::after{
-    display: inline-block; 
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f005'; 
+/* content 안에 어떤 걸 넣어도 나타나지 않는다. 왜일까? */
+.book .review .fa-star.star-10::after{
+    display: inline-block;
+    content: '~'; 
     color: #F2C94C;
-} */
+}
 
 .book .review .fa-star.star-40{
     color: #EEEDF5;
