@@ -189,15 +189,15 @@ header{
     margin-bottom: 0;
 }
 
-.book{
-    margin-bottom: 80px;
-}
-
 .book img{
     display: block; 
     width: 190px; 
     height: 250px;
     margin-bottom: 12px; 
+}
+
+.book{
+    margin-bottom: 80px;
 }
 
 .book .desc .author{
@@ -334,5 +334,19 @@ header{
 
     .top-100-page{
         width: 50%;
+    }
+
+    /* Bestsellers Category */
+    .line{
+        display: flex;
+    }
+
+    .book{
+        display: flex;
+        margin-right: 76px;
+    }
+
+    .book img{
+        margin-right: 36px;
     }
 }
