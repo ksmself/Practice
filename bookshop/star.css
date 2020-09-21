@@ -1,0 +1,30 @@
+.star{
+    display: inline-block; 
+    position: relative;
+    color: #EEEDF5;
+  }
+  
+  .star::before,
+  .star::after{
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 80px; 
+    font-weight: 900;
+    font-style: normal; 
+    font-variant: normal; 
+    text-rendering: auto; 
+    -webkit-font-smoothing: antialiased;
+    content: "\f005 \f005 \f005 \f005 \f005"
+  }
+  
+  .star::after{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    overflow: hidden;
+    color: #F2C94C; 
+  }
+  
+  .star.star-10::after{
+    width: 90%; 
+  }
